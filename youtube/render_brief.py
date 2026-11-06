@@ -171,6 +171,20 @@ def draw_item(im, it, lt, dur, idx):
             ch = f"{arrow} {it['change']}"
             d.text((lx - (1 - pc) * 30 * U, y), ch, font=F(64 * U), fill=col)
     y += int(110 * U)
+    # 충격 비교 줄: "1년 전 2,800원 → 지금 4,120원" + 큰 배지(+47%)
+    if it.get("before"):
+        b = it["before"]; pb = ease((lt - 1.4) / 0.45)
+        if pb > 0:
+            fb_, fbig = F(44 * U, False), F(44 * U)
+            xx = lx - (1 - pb) * 30 * U
+            t1 = f"{b.get('label', '1년 전')} {b['value']}  →  지금"
+            d.text((xx, y), t1, font=fb_, fill=MUTED)
+            if b.get("pct"):
+                bx = xx + d.textlength(t1, font=fb_) + 20 * U
+                fp = F(52 * U); pw_ = d.textlength(b["pct"], font=fp)
+                d.rounded_rectangle([bx, y - 10 * U, bx + pw_ + 36 * U, y + 66 * U], radius=int(16 * U), fill=col)
+                d.text((bx + 18 * U, y - 6 * U), b["pct"], font=fp, fill=(255, 255, 255))
+        y += int(96 * U)
     # 설명 두 줄
     for k, key in enumerate(("note1", "note2")):
         if not it.get(key): continue
