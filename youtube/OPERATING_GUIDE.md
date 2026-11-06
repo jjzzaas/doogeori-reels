@@ -9,14 +9,22 @@
 - 투자 권유 금지(특정 종목 매수·매도 추천 금지). 영상 끝에 "정보 제공 목적" 문구 고정.
 
 ## 1. 고정 정보
-- 채널명(가칭): 오늘의 경제 1분 / 시간대 Asia/Seoul
-- Metricool: **새 브랜드를 만들어 새 유튜브 채널을 연결**한다(두거리 브랜드 7776101에 연결된 유튜브와 섞지 않는다).
-  새 brand의 blogId를 여기에 적는다 → blogId: `______`
-- 업로드: 화~토 07:30 쇼츠 / 토 10:00 롱폼(주간 정리). 일·월은 쉰다(전날 장이 없음).
+- 채널: 오늘의 경제 1분 / 시간대 Asia/Seoul
+- 업로드는 YouTube Data API로 직접 한다(`yt_upload.py econ meta.json`). 토큰은 환경변수 `YT_REFRESH_TOKEN_ECON`.
+  Metricool은 쓰지 않는다(두거리 브랜드 유튜브와 섞이지 않게).
+- 게시: 화~토 07:30 쇼츠 / 토 10:00 롱폼(주간 정리). 일·월은 쉰다.
+
+## 0-1. 작업 환경 준비(새 세션마다)
+```
+cd youtube
+pip install -q pillow numpy scipy edge-tts requests
+fc-list | grep -qi "Noto Sans CJK" || (apt-get update -q && apt-get install -y -q fonts-noto-cjk)
+```
 
 ## 2. 매일 순서
-1. 오늘 날짜 확인. 일·월이면 종료. 공휴일 다음 날(전날 휴장)도 종료.
-2. getScheduledPosts로 오늘 예약된 유튜브 게시물 확인. 있으면 만들지 않는다.
+1. 오늘 날짜(Asia/Seoul) 확인. 일·월이면 종료.
+2. `python3 yt_recent.py econ 5`로 최근 업로드 확인. 오늘 게시(또는 오늘 예약)된 영상이 이미 있으면 만들지 않는다.
+   제목에 "[테스트]"가 붙은 비공개 영상은 무시한다.
 3. 자료 수집(웹 검색). **각 숫자마다 출처 2곳 교차 확인**:
    - 우선: 휘발유·경유 평균가(오피넷), 장바구니 물가(KAMIS 농축수산물 소매가), 소비자물가(통계청),
      대출·예금 금리(은행연합회, 한국은행 기준금리), 전기·가스·교통 요금 변경, 환율(직구·여행 영향), 부동산 전월세
@@ -35,19 +43,24 @@
    이전 영상과 같은 문장 금지(`used_titles.json`에 제목 기록, 비교).
 6. config.json 작성(example_config.json 참고) → `./build.sh config.json`
 7. 검수: 대표 프레임 4장을 뽑아 직접 본다. 숫자·단위·상승/하락 색(빨강=상승, 파랑=하락)·자막 잘림·쇼츠 60초 이하·음량 확인.
-8. 영상 전달: mp4를 `videos` 브랜치에 push → raw.githubusercontent.com 주소 사용(릴스와 같은 방식).
-9. 게시(§3) 후 getScheduledPosts로 status PUBLISHED와 공개 URL 확인.
-10. 보고 한 줄: "유튜브 쇼츠 게시 완료 — URL" 또는 "미완료 — 원인: ○○".
+8. 게시(§3). 성공하면 `used_titles.json`에 {"date","title","url"}를 추가하고
+   이 브랜치에 커밋·push 한다(다음 날 중복 확인용). 영상 파일(out/)은 커밋하지 않는다.
+9. 보고 한 줄: "유튜브 쇼츠 예약 완료(07:30 공개) — URL" 또는 "미완료 — 원인: ○○".
 
-## 3. 게시 (Metricool createScheduledPost)
-- providers: [{"network":"youtube"}]
-- youtubeData: {"title":"<60자 이하 제목>","type":"short"(롱폼은 "video"),"privacy":"public",
-  "madeForKids":false,"category":"NEWS_POLITICS","isAiGeneratedContent":false,"tags":["생활경제","물가","기름값","장바구니물가","경제뉴스"]}
-  (나레이션이 AI 음성이라도 '실제처럼 보이는 합성 인물·장면'이 아니면 false. 사람 얼굴·목소리를 흉내 내면 true)
-- text(설명란): 요약 3줄 + "출처: …" + "※ 투자 권유가 아닌 정보 제공 목적입니다." + #생활경제 #물가 #경제뉴스
-- videoCoverMilliseconds: 3500(첫 항목 숫자가 다 올라온 지점). 롱폼은 videoThumbnailUrl에 thumb.jpg 주소.
-- 제목 규칙: 숫자 + 궁금증. 예) "기름값 3주째 상승… 가득 넣으면 2천 원 더". 낚시성 거짓 제목 금지.
+## 3. 게시 (yt_upload.py)
+meta.json 예:
+```
+{"video":"out/<날짜>_short/video.mp4","title":"<60자 이하>","description":"<설명란>",
+ "tags":["생활경제","물가","기름값","장바구니물가","경제뉴스"],
+ "privacy":"private","publish_at":"<오늘>T07:30:00+09:00","category":"25","made_for_kids":false,"synthetic":false}
+```
+- `publish_at`을 주면 비공개로 올라간 뒤 그 시각에 자동 공개된다. 이미 07:30이 지났으면 publish_at을 빼고 "privacy":"public".
+- 롱폼(토)은 publish_at 10:00, "thumbnail":"out/<날짜>_long/thumb.jpg" 추가.
+- synthetic: AI 음성 나레이션만으로는 false. 실제 사람처럼 보이는 합성 인물·목소리를 쓰면 true.
+- description(설명란): 요약 3줄 + "출처: …" + "※ 투자 권유가 아닌 정보 제공 목적입니다." + #생활경제 #물가 #경제뉴스
+- 제목 규칙: 숫자 + 궁금증. 예) "배추 1포기 6,980원… 1년 새 79% 올랐다". 낚시성 거짓 제목 금지.
+- 업로드 실패(토큰 오류 등)면 다시 1번 시도, 그래도 실패하면 게시하지 않고 원인을 보고한다.
 
 ## 4. 성장 체크(매주 토요일)
-- getAnalyticsDataByMetrics로 조회수·평균 시청 시간·구독자 증가 확인 → 잘된 주제를 다음 주에 더 다룬다.
+- `python3 yt_recent.py econ 10`으로 조회수·좋아요·구독자 확인 → 잘된 주제를 다음 주에 더 다룬다.
 - 쇼츠 평균 시청 비율 70% 미만이면 항목을 3→2개로 줄여 짧게 만든다.
