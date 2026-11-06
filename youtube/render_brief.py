@@ -181,13 +181,26 @@ def draw_item(im, it, lt, dur, idx):
             d.text((lx, y + (1 - pn) * 24 * U), ln, font=fnt, fill=INK if k == 0 else MUTED)
             y += int(64 * U)
         y += int(14 * U)
-    # 미니 차트
+    # 생활 영향 박스("내 지갑엔") — 생활 경제 채널의 핵심 한 줄
+    if it.get("wallet"):
+        pw = ease((lt - 2.3) / 0.45)
+        if pw > 0:
+            fw, fl = F(44 * U), F(32 * U)
+            lines = wrap(d, it["wallet"], fw, colw - 64 * U)
+            bh = int(70 * U + 60 * U * len(lines))
+            yy = y + int(10 * U) + (1 - pw) * 24 * U
+            d.rounded_rectangle([lx, yy, lx + colw, yy + bh], radius=int(24 * U), fill=(44, 40, 30), outline=ACC, width=max(2, int(3 * U)))
+            d.text((lx + 32 * U, yy + 18 * U), CFG.get("wallet_label", "내 지갑엔"), font=fl, fill=ACC)
+            for k, ln in enumerate(lines):
+                d.text((lx + 32 * U, yy + 62 * U + 60 * U * k), ln, font=fw, fill=INK)
+        y += int(10 * U + 70 * U + 60 * U * len(wrap(d, it["wallet"], F(44 * U), colw - 64 * U)) + 20 * U)
+    # 미니 차트(공간이 부족하면 생략)
     if it.get("series") and len(it["series"]) >= 2:
         ps = ease((lt - 0.6) / 2.0)
         if LONG: box = (int(W * 0.56), int(260 * U), W - pad, int(760 * U))
         else: box = (lx, max(y + int(40 * U), int(1060 * U)), W - pad, int(1440 * U))
-        sparkline(d, box, it["series"], ps, col)
-        if it.get("series_label"):
+        if box[3] - box[1] >= int(180 * U): sparkline(d, box, it["series"], ps, col)
+        if it.get("series_label") and box[3] - box[1] >= int(180 * U):
             d.text((box[0], box[3] + 14 * U), it["series_label"], font=F(30 * U, False), fill=MUTED)
     subtitle(d, it.get("say", ""), lt, dur)
 
