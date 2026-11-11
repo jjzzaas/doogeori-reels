@@ -3,13 +3,15 @@
   "id": "1UnyC1pavp_GjehiTj0l3ZMsrk0IJRh_z",
   "uploaded": "2026-11-11",
   "size": 3118422,
-  "status": "unreviewed"
+  "status": "ok_unused",
+  "category": "food/prep(버섯 담은 뚝배기)"
  },
  "20261111_103915.jpg": {
   "id": "1-iJRpY3YiBcmkpricRP0sg9BTuZtutb2",
   "uploaded": "2026-11-11",
   "size": 4407704,
-  "status": "unreviewed"
+  "status": "pending",
+  "note": "빨간 양념(다대기)을 큰 통에 담은 사진 — 매장에서 직접 만든 양념인가요? 어떤 메뉴에 들어가나요? 제안 멘트: ① '매장에서 직접 만든 양념' ② '얼큰함의 비밀, 직접 버무린 양념'"
  },
  "20261111_103417.jpg": {
   "id": "1ayRqFgSdfWyG9xvROoW_MQevhMjdJgwL",
@@ -27,13 +29,15 @@
   "id": "1EkQCAQ8nDc00ANNmQ5Kh6_1kbtrGUEw2",
   "uploaded": "2026-11-11",
   "size": 2875596,
-  "status": "unreviewed"
+  "status": "ok_unused",
+  "category": "store(양념통·셀프 코너)"
  },
  "20261111_102615.jpg": {
   "id": "1q4xlvzJDOTi-MuJ850eVFffnwLBBP6Ud",
   "uploaded": "2026-11-11",
   "size": 3150183,
-  "status": "unreviewed"
+  "status": "pending",
+  "note": "'전국 택배 주문 가능' 안내판 — 택배 주문 홍보용인가요? 어떤 메뉴가 택배 되는지, 주문 방법(전화번호 등)을 캡션에 넣을까요? 제안 멘트: ① '멀리 계셔도 두거리 맛 그대로, 전국 택배 됩니다' ② '집에서도 우신탕 한 그릇, 택배 문의 주세요'"
  },
  "20261111_102608.jpg": {
   "id": "1WLjJ_1ClyLf5aCSKZ44wX89eX550vOhB",
@@ -51,7 +55,8 @@
   "id": "1_W5tY5b9wZmxULH6EiWxeArPLI4C91WG",
   "uploaded": "2026-11-11",
   "size": 3092700,
-  "status": "unreviewed"
+  "status": "pending",
+  "note": "'애니워터 정수필터 설치 위생 업소' 안내판 — 깨끗한 물·위생 강조용인가요? 제안 멘트: ① '정수필터로 거른 깨끗한 물로 끓입니다' ② '물 한 잔까지 깨끗하게 — 위생 업소 인증'"
  },
  "20261111_102533.jpg": {
   "id": "1N4fC7FA_syM1KvMstEG2dbOtUL2FuW5J",
@@ -69,19 +74,28 @@
   "id": "13G15zWcHURcO8bWdjMayavgifl6iZES7",
   "uploaded": "2026-11-11",
   "size": 3441791,
-  "status": "unreviewed"
+  "status": "used",
+  "category": "store(라면사리 선반)",
+  "used_on": [
+   "2026-11-11"
+  ]
  },
  "20261110_120618.jpg": {
   "id": "1O1Qo-aI9De1-oy8opV-QYoQWvgHSl7Fb",
   "uploaded": "2026-11-11",
   "size": 1463624,
-  "status": "unreviewed"
+  "status": "used",
+  "category": "food",
+  "used_on": [
+   "2026-11-11"
+  ]
  },
  "20261111_102156.jpg": {
   "id": "1QyY5nP9Lf5nY2HE0uM_E3F09B7f2wWaW",
   "uploaded": "2026-11-11",
   "size": 2628292,
-  "status": "unreviewed"
+  "status": "ok_unused",
+  "category": "side(백김치)"
  },
  "20261111_102149.jpg": {
   "id": "15Wdex-6phq5bOjOpwQovQ1mN7519QIrX",
@@ -93,13 +107,18 @@
   "id": "1ArcxaiqyOsSwSFzfaRP9S14-qZHx6D_M",
   "uploaded": "2026-11-11",
   "size": 2508720,
-  "status": "unreviewed"
+  "status": "used",
+  "category": "side(백김치)",
+  "used_on": [
+   "2026-11-11"
+  ]
  },
  "20261110_115725.jpg": {
   "id": "1Y1hxPI6IIGSqJCrJ-BOSB5tlp9MoU9Xt",
   "uploaded": "2026-11-11",
   "size": 2445863,
-  "status": "unreviewed"
+  "status": "ok_unused",
+  "category": "equipment(압력솥)"
  },
  "20261110_115704.jpg": {
   "id": "1Hl2gVZOL5Gd8WDaASP2H0mYYlGL4cH8m",
@@ -117,7 +136,9 @@
   "id": "1AkundWfh2XGjXQzx3FGYjclGRI0BLIpt",
   "uploaded": "2026-11-11",
   "size": 1246955,
-  "status": "unreviewed"
+  "status": "excluded",
+  "category": "POS 화면",
+  "note": "사용 안 함 — 주문·매출 화면(영업 정보)"
  },
  "20261110_120612.jpg": {
   "id": "1ktlAvxCcCyczU0xdHJ4oX-cOltAFtLdd",
@@ -141,7 +162,11 @@
   "id": "1N_pgro8uNNcEGLtelKweAVAJL_oKZIne",
   "uploaded": "2026-11-11",
   "size": 3335681,
-  "status": "unreviewed"
+  "status": "used",
+  "category": "food/kitchen",
+  "used_on": [
+   "2026-11-11"
+  ]
  },
  "20261110_115644.jpg": {
   "id": "17eOF_5lkYPXUSAaEl5PDUZ_qW8gFG25C",
