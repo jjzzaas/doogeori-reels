@@ -29,8 +29,11 @@
   "id": "1EkQCAQ8nDc00ANNmQ5Kh6_1kbtrGUEw2",
   "uploaded": "2026-11-11",
   "size": 2875596,
-  "status": "ok_unused",
-  "category": "store(양념통·셀프 코너)"
+  "status": "used",
+  "category": "store(양념통·셀프 코너)",
+  "used_on": [
+   "2026-11-12"
+  ]
  },
  "20261111_102615.jpg": {
   "id": "1q4xlvzJDOTi-MuJ850eVFffnwLBBP6Ud",
@@ -848,8 +851,12 @@
   "id": "1cg6zz1kBWsRIBYy6A_bNXcdSSzDKSiIw",
   "uploaded": "2026-11-06",
   "size": 3420587,
-  "status": "ok_unused",
-  "note": "사용 가능 — 매장 밤 외관. 자유롭게, 감성적으로(\"불 켜진 두거리\")"
+  "status": "used",
+  "note": "사용 가능 — 매장 밤 외관. 자유롭게, 감성적으로(\"불 켜진 두거리\")",
+  "used_on": [
+   "2026-11-12"
+  ],
+  "category": "env(매장 밤 외관)"
  },
  "527d9a7c75feded29d2f7860c44a8a5c7ff56e39ba181483b4bd19ed7e5b7dc5.png": {
   "id": "1dSV-jIuQ-7gmSEnivYvKUrcD4j9AO5R1",
@@ -1239,19 +1246,25 @@
   "id": "1OsUuuXPm7HbK8KxoW1LmhMd6FWjFmqWq",
   "uploaded": "2026-11-04",
   "size": 771359,
-  "status": "unreviewed"
+  "status": "used",
+  "used_on": [
+   "2026-11-12"
+  ],
+  "category": "food(전골 냄비 여러 개, 버섯·고기·채소)"
  },
  "1716016034379.jpg": {
   "id": "1deJBvpGQzq9jNnvbV_-K0oOGq9CVayHM",
   "uploaded": "2026-11-04",
   "size": 765515,
-  "status": "unreviewed"
+  "status": "ok_unused",
+  "category": "food(전골 위 샤브 고기)"
  },
  "1716016026487.jpg": {
   "id": "1FiVWNR-B2EPgBfqemPnKBmdrMsyGigsz",
   "uploaded": "2026-11-04",
   "size": 395767,
-  "status": "unreviewed"
+  "status": "ok_unused",
+  "category": "food(전골 냄비들, 당근·버섯)"
  },
  "IMG_20240518_161646_493.jpg": {
   "id": "1VOjlaMFAmv80Oc35m53KEy5gIkJa_Ta0",
@@ -1408,5 +1421,64 @@
   "uploaded": "2026-11-0x",
   "size": 196787,
   "status": "unreviewed"
+ },
+ "20261111_112944.jpg": {
+  "id": "1UvDl0rtEQyexZMDas1g2fSwbu74ufiHg",
+  "uploaded": "2026-11-11",
+  "size": 2911724,
+  "status": "ok_unused",
+  "category": "side/sauce(우신다데기 통, 라벨)"
+ },
+ "20261111_112952.jpg": {
+  "id": "1HXO9RhacMyMdeD5mV1-CkEGqfpPhr5ZX",
+  "uploaded": "2026-11-11",
+  "size": 2730239,
+  "status": "ok_unused",
+  "category": "side/sauce(우신다데기 통, 라벨 크게)"
+ },
+ "20261111_134430.jpg": {
+  "id": "1B3IGBHA-nf8eBvxrlZRErry02VrdZ3Bx",
+  "uploaded": "2026-11-11",
+  "size": 3235761,
+  "status": "ok_unused",
+  "category": "side(깍두기, 가까이)"
+ },
+ "20261111_134435.jpg": {
+  "id": "1Fi-agnmOF7_W_HgB200pKwtyd4NeqCG9",
+  "uploaded": "2026-11-11",
+  "size": 3315504,
+  "status": "ok_unused",
+  "category": "side(깍두기, 비스듬히)"
+ },
+ "20261111_184118.jpg": {
+  "id": "11Ha9nSsxynMrn8GwfgBPE0NaN5724PTV",
+  "uploaded": "2026-11-11",
+  "size": 2245105,
+  "status": "ok_unused",
+  "category": "side/sauce(찜양념 통)"
+ },
+ "20261111_184123.jpg": {
+  "id": "15RjUZCPsU22B9vFrrW2iXUt7T2Gs6Zy4",
+  "uploaded": "2026-11-11",
+  "size": 2254209,
+  "status": "ok_unused",
+  "category": "side/sauce(찜양념 통, 라벨)"
+ },
+ "20261111_184127.jpg": {
+  "id": "15Gsdy_KtB__upVJyiyJV0SEg_XbHX-xs",
+  "uploaded": "2026-11-11",
+  "size": 2223755,
+  "status": "ok_unused",
+  "category": "side/sauce(찜양념 통, 라벨 옆)"
+ },
+ "20261111_134424.jpg": {
+  "id": "1uA6goeYt2n-8lcf6vgS2zfI73MHbN8R-",
+  "uploaded": "2026-11-11",
+  "size": 3236519,
+  "status": "used",
+  "category": "side(깍두기)",
+  "used_on": [
+   "2026-11-12"
+  ]
  }
 }
