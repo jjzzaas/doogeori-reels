@@ -61,7 +61,8 @@
   "uploaded": "2026-11-11",
   "size": 3092700,
   "status": "ok_unused",
-  "note": "사용 가능(점주 확인 2026-11-12) — 애니워터 정수필터 위생 업소 안내판, 깨끗한 물·위생 강조용. 멘트 방향: '정수필터로 거른 깨끗한 물로 끓입니다', '물 한 잔까지 깨끗하게 — 위생 업소 인증'"
+  "note": "사용 가능(점주 확인 2026-11-12) — 애니워터 정수필터 위생 업소 안내판, 깨끗한 물·위생 강조용. 멘트 방향: '정수필터로 거른 깨끗한 물로 끓입니다', '물 한 잔까지 깨끗하게 — 위생 업소 인증'",
+  "category": "store(정수필터 위생 업소 안내판)"
  },
  "20261111_102533.jpg": {
   "id": "1N4fC7FA_syM1KvMstEG2dbOtUL2FuW5J",
@@ -123,7 +124,7 @@
   "uploaded": "2026-11-11",
   "size": 2445863,
   "status": "ok_unused",
-  "category": "equipment(압력솥)"
+  "category": "equipment(1인 압력 솥밥 기계)"
  },
  "20261110_115704.jpg": {
   "id": "1Hl2gVZOL5Gd8WDaASP2H0mYYlGL4cH8m",
@@ -1484,5 +1485,91 @@
   "used_on": [
    "2026-11-12"
   ]
+ },
+ "20261112_102403.jpg": {
+  "id": "1G8rFAXYn0wxnAMhweETzFxnM1o7De0iW",
+  "uploaded": "2026-11-12",
+  "size": 3908333,
+  "status": "used",
+  "category": "kitchen/boricha(겉보리 포대)",
+  "used_on": [
+   "2026-11-13"
+  ]
+ },
+ "20261112_102354.jpg": {
+  "id": "1rj36TdgO09hGjXCf1G8OiPzY14Kq6t3c",
+  "uploaded": "2026-11-12",
+  "size": 3823219,
+  "status": "used",
+  "category": "kitchen/boricha(볶기 전 겉보리, 볶음솥)",
+  "used_on": [
+   "2026-11-13"
+  ]
+ },
+ "20261112_172255.jpg": {
+  "id": "1qF0WZZHwceZsdn_Of2L6nY4N3oLaOQy4",
+  "uploaded": "2026-11-12",
+  "size": 3278191,
+  "status": "used",
+  "category": "kitchen/boricha(볶은 보리, 볶음솥 전체 — 테두리 그을음은 확대로 빼기)",
+  "used_on": [
+   "2026-11-13"
+  ]
+ },
+ "20261112_102506.jpg": {
+  "id": "1h0c4mG6sDUITosdx0KVdcQkZlvmHiLxQ",
+  "uploaded": "2026-11-12",
+  "size": 3038206,
+  "status": "used",
+  "category": "store/boricha(볶은 보리 봉지, 두거리 로고 스티커)",
+  "used_on": [
+   "2026-11-13"
+  ]
+ },
+ "20261112_172252.jpg": {
+  "id": "1fGdh6h2MeFYYZN4WrlztDeywgol380cX",
+  "uploaded": "2026-11-12",
+  "size": 4255893,
+  "status": "ok_unused",
+  "category": "kitchen/boricha(볶은 보리, 볶음솥 안)"
+ },
+ "20261112_172246.jpg": {
+  "id": "1ppsilWkbnFMd01u_y3DC8yxkFeSd7dwg",
+  "uploaded": "2026-11-12",
+  "size": 4063452,
+  "status": "ok_unused",
+  "category": "kitchen/boricha(볶은 보리, 볶음솥 안)"
+ },
+ "20261112_102440.jpg": {
+  "id": "1ivfwR_My4v4_n04HZb78Zq4bUUfytSke",
+  "uploaded": "2026-11-12",
+  "size": 4600815,
+  "status": "ok_unused",
+  "category": "kitchen/boricha(볶은 보리 가까이)"
+ },
+ "20261112_102436.jpg": {
+  "id": "1tpzt57jYvfHUGCX5wsq8alzRZnrGp8UU",
+  "uploaded": "2026-11-12",
+  "size": 4409345,
+  "status": "ok_unused",
+  "category": "kitchen/boricha(볶은 보리 가까이, 오른쪽 아래 그릇)"
+ },
+ "20261112_102357.jpg": {
+  "id": "1qxT27Ih-yGif4xkXVVFr5l1xulBvtTkz",
+  "uploaded": "2026-11-12",
+  "size": 3681600,
+  "status": "unreviewed"
+ },
+ "20261112_102352.jpg": {
+  "id": "1_3ItDS6u-k1Q6eY8N3XTKq1eXsq3Jeip",
+  "uploaded": "2026-11-12",
+  "size": 3217624,
+  "status": "unreviewed"
+ },
+ "20261112_102458.jpg": {
+  "id": "1cAjblmgQ9qjLBEf88CJiKIl_Ht-jIvvr",
+  "uploaded": "2026-11-12",
+  "size": 3287437,
+  "status": "unreviewed"
  }
 }
