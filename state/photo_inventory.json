@@ -3,8 +3,11 @@
   "id": "1UnyC1pavp_GjehiTj0l3ZMsrk0IJRh_z",
   "uploaded": "2026-11-11",
   "size": 3118422,
-  "status": "ok_unused",
-  "category": "food/prep(버섯 담은 뚝배기)"
+  "status": "used",
+  "category": "food/prep(버섯 담은 뚝배기)",
+  "used_on": [
+   "2026-11-14"
+  ]
  },
  "20261111_103915.jpg": {
   "id": "1-iJRpY3YiBcmkpricRP0sg9BTuZtutb2",
@@ -123,8 +126,11 @@
   "id": "1Y1hxPI6IIGSqJCrJ-BOSB5tlp9MoU9Xt",
   "uploaded": "2026-11-11",
   "size": 2445863,
-  "status": "ok_unused",
-  "category": "equipment(1인 압력 솥밥 기계)"
+  "status": "used",
+  "category": "equipment(1인 압력 솥밥 기계)",
+  "used_on": [
+   "2026-11-14"
+  ]
  },
  "20261110_115704.jpg": {
   "id": "1Hl2gVZOL5Gd8WDaASP2H0mYYlGL4cH8m",
@@ -1266,8 +1272,11 @@
   "id": "1FiVWNR-B2EPgBfqemPnKBmdrMsyGigsz",
   "uploaded": "2026-11-04",
   "size": 395767,
-  "status": "ok_unused",
-  "category": "food(전골 냄비들, 당근·버섯)"
+  "status": "used",
+  "category": "food(전골 냄비들, 당근·버섯)",
+  "used_on": [
+   "2026-11-14"
+  ]
  },
  "IMG_20240518_161646_493.jpg": {
   "id": "1VOjlaMFAmv80Oc35m53KEy5gIkJa_Ta0",
@@ -1429,9 +1438,12 @@
   "id": "1UvDl0rtEQyexZMDas1g2fSwbu74ufiHg",
   "uploaded": "2026-11-11",
   "size": 2911724,
-  "status": "ok_unused",
+  "status": "used",
   "category": "side/sauce(우신다데기 통, 라벨)",
-  "note": "사용 가능(점주 확인 2026-11-12) — 우신탕 비법 다데기. 손님 상에 따로 나가는 양념이 아니라 1개월 숙성 후 우신탕에 들어감. 멘트 방향: '한 달 숙성한 비법 다데기', '우신탕 얼큰함의 비밀'. '직접 만든'·'곁들임/셀프 양념'으로 쓰지 않음"
+  "note": "사용 가능(점주 확인 2026-11-12) — 우신탕 비법 다데기. 손님 상에 따로 나가는 양념이 아니라 1개월 숙성 후 우신탕에 들어감. 멘트 방향: '한 달 숙성한 비법 다데기', '우신탕 얼큰함의 비밀'. '직접 만든'·'곁들임/셀프 양념'으로 쓰지 않음",
+  "used_on": [
+   "2026-11-14"
+  ]
  },
  "20261111_112952.jpg": {
   "id": "1HXO9RhacMyMdeD5mV1-CkEGqfpPhr5ZX",
@@ -1570,6 +1582,78 @@
   "id": "1cAjblmgQ9qjLBEf88CJiKIl_Ht-jIvvr",
   "uploaded": "2026-11-12",
   "size": 3287437,
+  "status": "unreviewed"
+ },
+ "20261112_141814.jpg": {
+  "id": "1pGzfypMio-X9fwJa0yyGJzn0uxA_4auI",
+  "uploaded": "2026-11-13",
+  "size": 3264036,
+  "status": "pending",
+  "note": "흰 포장 용기에 담아 밀봉한 것들 — 택배·포장용 우신탕인가요? 제안 멘트: ① '한 그릇씩 정성껏 포장했습니다' ② '집에서도 두거리 맛 그대로, 포장 됩니다'"
+ },
+ "20261112_141835.jpg": {
+  "id": "1LY7GGyagfS11kBg_mVrqyKzDCqT2ZaL4",
+  "uploaded": "2026-11-13",
+  "size": 2765894,
+  "status": "pending",
+  "note": "밀봉 포장 용기를 쌓아둔 사진(뒤에 홀·계산대 보임) — 위와 같은 택배·포장용인가요?"
+ },
+ "20261112_175758.jpg": {
+  "id": "1UKrcmV17RMbu_3lwcOh7gQ5dnOWS9w_D",
+  "uploaded": "2026-11-13",
+  "size": 2765894,
+  "status": "pending",
+  "note": "포장 용기에 담긴 미역국 — 메뉴판에 없는데, 어떤 용도인가요(포장 서비스·기본 제공 등)? 제안 멘트: ① '한 그릇씩 담아낸 미역국' ② '손님 상에 나가는 따끈한 미역국'"
+ },
+ "20261112_182340.jpg": {
+  "id": "1fDYlR3KQPnYcC8csPUelPvSB512keBSU",
+  "uploaded": "2026-11-13",
+  "size": 3695978,
+  "status": "pending",
+  "note": "빨간 양념에 버무린 재료(18:23) — 무엇인가요(우신찜 양념 버무리기 등)? 제안 멘트: ① '매콤하게 버무리는 중' ② '우신찜 맛의 시작'"
+ },
+ "20261112_184128.jpg": {
+  "id": "1yTQr3CFQ3IIxJ_bECmpuahoFaVf5BdT2",
+  "uploaded": "2026-11-13",
+  "size": 3442694,
+  "status": "pending",
+  "note": "위 양념에 청양고추를 듬뿍 넣는 사진 — 같은 음식인가요? 제안 멘트: ① '청양고추 아낌없이' ② '매운맛은 고추로 정직하게'"
+ },
+ "20261112_184708.jpg": {
+  "id": "1iPpnnQHlUOMmt-w60HKChsBBFC2xXDfy",
+  "uploaded": "2026-11-13",
+  "size": 4207508,
+  "status": "pending",
+  "note": "고추까지 다 버무린 완성 사진 — 메뉴 이름을 알려주시면 그 이름으로 쓸게요"
+ },
+ "20261112_175801.jpg": {
+  "id": "17ymUuiQw5QQNwQm6A1jPvitEVK4rEO9n",
+  "uploaded": "2026-11-13",
+  "size": 2791455,
+  "status": "unreviewed"
+ },
+ "20261112_175806.jpg": {
+  "id": "1-BN-iCN8AwitwAoyuRjkCJnWEd4gyogm",
+  "uploaded": "2026-11-13",
+  "size": 2736341,
+  "status": "unreviewed"
+ },
+ "20261112_141819.jpg": {
+  "id": "1CiNCSI6wDL2dQmpG6UM0zn636bIHKmSa",
+  "uploaded": "2026-11-13",
+  "size": 3206995,
+  "status": "unreviewed"
+ },
+ "20261112_184133.jpg": {
+  "id": "1pfrEOlur80A55blBbYYtkMofeTyR-_ON",
+  "uploaded": "2026-11-13",
+  "size": 3347846,
+  "status": "unreviewed"
+ },
+ "20261112_184709.jpg": {
+  "id": "1AvyiAopizS6FCISk5fI-7Yr6PxmuaZnK",
+  "uploaded": "2026-11-13",
+  "size": 4179792,
   "status": "unreviewed"
  }
 }
